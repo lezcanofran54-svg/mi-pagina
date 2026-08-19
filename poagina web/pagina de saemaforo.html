@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Semáforo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>🚦 El Semáforo</h1>
+        <p>Cómo funciona y para qué sirve</p>
+    </header>
+
+    <nav>
+        <a href="#que-es">¿Qué es?</a>
+        <a href="#funciona">¿Cómo funciona?</a>
+        <a href="#sirve">¿Para qué sirve?</a>
+        <a href="#simulador">Simulador</a>
+    </nav>
+
+    <main>
+
+        <section id="que-es">
+            <h2>¿Qué es un semáforo?</h2>
+            <p>
+                Un semáforo es un dispositivo que organiza el tránsito
+                de vehículos y peatones. Utiliza luces de diferentes colores
+                para indicar cuándo debemos detenernos, esperar o avanzar.
+            </p>
+        </section>
+
+        <section id="funciona">
+            <h2>¿Cómo funciona?</h2>
+
+            <div class="colores">
+                <div class="color rojo">
+                    <h3>🔴 Rojo</h3>
+                    <p>Significa detenerse.</p>
+                </div>
+
+                <div class="color amarillo">
+                    <h3>🟡 Amarillo</h3>
+                    <p>Significa precaución y prepararse para detenerse.</p>
+                </div>
+
+                <div class="color verde">
+                    <h3>🟢 Verde</h3>
+                    <p>Indica que se puede avanzar cuando sea seguro.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sirve">
+            <h2>¿Para qué sirve?</h2>
+            <ul>
+                <li>🚗 Organiza el tránsito.</li>
+                <li>🚶 Protege a los peatones.</li>
+                <li>🛑 Evita accidentes.</li>
+                <li>🚦 Indica cuándo avanzar y cuándo detenerse.</li>
+                <li>🏙️ Ayuda a mantener el orden en las calles.</li>
+            </ul>
+        </section>
+
+        <section id="simulador">
+            <h2>Simulador de semáforo</h2>
+
+            <div class="semaforo">
+                <div id="luz-roja" class="luz"></div>
+                <div id="luz-amarilla" class="luz"></div>
+                <div id="luz-verde" class="luz"></div>
+            </div>
+
+            <p id="mensaje">Presiona el botón para comenzar.</p>
+
+            <button onclick="cambiarLuz()">Cambiar luz</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🚦 Página educativa sobre el semáforo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+<section id="encuesta">
+    <h2>📝 Encuesta: ¿Qué debemos hacer?</h2>
+
+    <div class="pregunta">
+        <h3>🔴 Cuando el semáforo está en rojo, ¿qué debemos hacer?</h3>
+
+        <label>
+            <input type="radio" name="rojo" value="correcto">
+            Detenernos
+        </label>
+
+        <label>
+            <input type="radio" name="rojo" value="incorrecto">
+            Acelerar
+        </label>
+
+        <label>
+            <input type="radio" name="rojo" value="incorrecto">
+            Seguir normalmente
+        </label>
+    </div>
+
+    <div class="pregunta">
+        <h3>🟡 Cuando el semáforo está en amarillo, ¿qué debemos hacer?</h3>
+
+        <label>
+            <input type="radio" name="amarillo" value="correcto">
+            Reducir la velocidad y estar atentos
+        </label>
+
+        <label>
+            <input type="radio" name="amarillo" value="incorrecto">
+            Acelerar para pasar rápido
+        </label>
+
+        <label>
+            <input type="radio" name="amarillo" value="incorrecto">
+            Ignorar el semáforo
+        </label>
+    </div>
+
+    <div class="pregunta">
+        <h3>🟢 Cuando el semáforo está en verde, ¿qué debemos hacer?</h3>
+
+        <label>
+            <input type="radio" name="verde" value="correcto">
+            Avanzar cuando sea seguro
+        </label>
+
+        <label>
+            <input type="radio" name="verde" value="incorrecto">
+            Detenernos siempre
+        </label>
+
+        <label>
+            <input type="radio" name="verde" value="incorrecto">
+            Ir lo más rápido posible
+        </label>
+    </div>
+
+    <button onclick="corregirEncuesta()">Comprobar respuestas</button>
+
+    <p id="resultadoEncuesta"></p>
+</section>
+
+<section id="video">
+    <h2>🎥 Video educativo: Semáforo en Scratch</h2>
+
+    <p>
+        En este video podés aprender sobre un semáforo
+        utilizando Scratch.
+    </p>
+
+    <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/EWF7pMEm1tE"
+            title="Semáforo en Scratch"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+</html>
